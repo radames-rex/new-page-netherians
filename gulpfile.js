@@ -11,11 +11,13 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
   return gulp.src([
       'src/assets/stylesheets/sass/reset.scss',
-      'src/assets/stylesheets/sass/layout.scss',
       'src/assets/stylesheets/sass/fonts.scss',
+      'src/assets/stylesheets/sass/layout.scss',
+      'src/assets/stylesheets/sass/base.scss',
       'src/assets/stylesheets/sass/header.scss',
       'src/assets/stylesheets/sass/**/*.scss',
-      'src/assets/stylesheets/sass/footer.scss'
+      'src/assets/stylesheets/sass/footer.scss',
+      'src/assets/stylesheets/sass/shame.scss'
     ])
     .pipe(concat('app.scss'))
     .pipe(sass().on('error', sass.logError))
@@ -25,18 +27,17 @@ gulp.task('sass', function() {
 // Gera um build para deploy no servidor
 gulp.task('build', function() {
   return gulp.src([
-      'app/**',
-      '!app/.temp/',
-      '!app/stylesheets/sass',
-      '!app/**/DS.Store'
+      'src/**',
+      '!src/.temp/',
+      '!src/assets/stylesheets/sass',
+      '!src/**/DS.Store'
     ])
     .pipe(gulp.dest('dist/'));
 });
 
 // Observa mudanças para fazer reload
 gulp.task('watch', function() {
-  gulp.watch('src/stylesheets/sass/**/*.scss', ['sass']);
-  // gulp.watch('scripts/**/*.js', ['babel'])
+  gulp.watch('src/assets/stylesheets/sass/**/*.scss', ['sass']);
 });
 
 // Inicia o servidor

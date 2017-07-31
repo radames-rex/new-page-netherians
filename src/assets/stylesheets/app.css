@@ -1,5 +1,8 @@
+body {
+  background-color: #f3f3f3; }
+
 .header {
-  background-color: #ff0000; }
+  background-color: #fff; }
   .header-title {
     background-color: #fff;
     color: #ff0000; }

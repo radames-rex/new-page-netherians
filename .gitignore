@@ -1,4 +1,9 @@
+# Files
 .DS_Store
-dist/
+
+# Folders
 node_modules/
 bower_components/
+src/libs/
+dist/
+.tmp/
