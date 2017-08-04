@@ -5,6 +5,5 @@
 node_modules/
 bower_components/
 src/libs/
-vendor/
 dist/
 .tmp/
