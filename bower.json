@@ -1,0 +1,24 @@
+{
+  "name": "new-page-netherians",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "radames-rex <radames.rex@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/radames-rex/new-page-netherians",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

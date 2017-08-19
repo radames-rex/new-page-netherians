@@ -1,8 +1,28 @@
 body {
   background-color: #f3f3f3; }
 
+/**
+ * BASE
+ *********************************/
 .header {
   background-color: #fff; }
   .header-title {
     background-color: #fff;
     color: #ff0000; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+
+.col {
+  display: flex;
+  flex-direction: column; }
+
+.nav {
+  justify-content: flex-end; }
+  .nav-item {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center; }
