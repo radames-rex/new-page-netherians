@@ -1,0 +1,31 @@
+.home {
+	height: 100vh;
+	margin: 0 0 -120px 0;
+
+	&-banner {
+		height: 80%;
+		justify-content: center;
+		align-items: center;
+	  color: #fff;
+
+		h1 {
+	    font-size: 56px;
+	    text-align: center;
+		}
+
+		h3 {
+	    background: #000;
+	    padding: 12px;			
+			margin: 24px 0;
+	    font-size: 36px;
+	    text-align: center;
+	    font-family: 'Muli';
+	    font-weight: 300;
+	    text-transform: uppercase;
+		}
+	}
+}
+
+.notices {
+	background-color: #fff;
+}
