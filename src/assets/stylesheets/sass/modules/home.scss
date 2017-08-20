@@ -27,8 +27,7 @@
 }
 
 .notices,
-	.game,
-		.team {
+	.team {
 	background-color: #fff;
 	font-family: 'Muli';
 	padding: 24px 5%;
@@ -85,11 +84,49 @@
 
 
 .game {
+	padding: 0;
+
 	&-call {
-		background: url('../images/BotE.png') no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 66px;
-    background-size: 40%;
     height: 100vh;
+    align-items: flex-end;
+		background: url('../images/BotE.png'), #ffffff;
+		background: url('../images/BotE.png'), -moz-linear-gradient(-45deg, #ffffff 0%, #3f5338 100%);
+		background: url('../images/BotE.png'), -webkit-linear-gradient(-45deg, #ffffff 0%,#3f5338 100%);
+		background: url('../images/BotE.png'), linear-gradient(135deg, #ffffff 0%,#3f5338 100%);		
+		background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    h2 {
+    	 color: #8dc863;
+	    margin: 38% 5% 0 0;
+	    text-align: right;    	
+    	font-family: 'Beyond';
+	    font-size: 36px;
+	    text-shadow: 0 0 26px #24CAFB;    	
+    }
+
+    button {
+	    width: fit-content;
+	    margin: 16px 5% 0 0;
+	    background-color: rgb(115, 157, 88);
+	    color: #fff;
+	    border: 1px solid #66573a;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    padding: 12px 16px;
+	    font-size: 16px;
+	    text-transform: uppercase;
+
+	    &:hover {
+	    	opacity: 0.75;
+	    }
+
+	    &:active {
+		    background-color: #fff;
+		    color: rgb(115, 157, 88);    	
+	    }
+			
+    }
 	}
 }
