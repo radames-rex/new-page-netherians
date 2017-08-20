@@ -82,3 +82,14 @@
 		}
 	}
 }
+
+
+.game {
+	&-call {
+		background: url('../images/BotE.png') no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 66px;
+    background-size: 40%;
+    height: 100vh;
+	}
+}
