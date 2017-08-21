@@ -44,7 +44,7 @@ table {
 
 @font-face {
   font-family: 'Muli';
-  src: url("../fonts/Muli-SemiExtraLight.ttf");
+  src: url("../fonts/Muli-ExtraLight.ttf");
   font-weight: 300; }
 
 @font-face {
@@ -55,6 +55,11 @@ table {
 @font-face {
   font-family: 'Beyond';
   src: url("../fonts/Beyond.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Pixel';
+  src: url("../fonts/Pixel.ttf");
   font-weight: 400; }
 
 body {
@@ -80,9 +85,17 @@ main {
   display: flex;
   flex-direction: row; }
 
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse; }
+
 .col {
   display: flex;
   flex-direction: column; }
+
+.col-reverse {
+  display: flex;
+  flex-direction: column-reverse; }
 
 .nav {
   justify-content: flex-end; }
@@ -230,3 +243,53 @@ main {
       .game-call button:active {
         background-color: #fff;
         color: #739d58; }
+
+.team {
+  background-color: #000;
+  color: #fff; }
+  .team-member {
+    flex: 1; }
+    .team-member figure {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #000;
+      box-shadow: 0 0 26px #24CAFB;
+      overflow: hidden; }
+      .team-member figure img {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+        transform: translateX(-50%);
+        margin-left: 50%; }
+    .team-member-info {
+      margin: 0 42px; }
+      .team-member-info h4 {
+        font-family: 'Pixel';
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .team-member-info span {
+        margin: 6px 0 0 0;
+        font-family: 'Muli';
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic; }
+      .team-member-info p {
+        width: 25vw;
+        margin: 8px 0 0 0;
+        font-family: 'Muli';
+        font-size: 16px;
+        font-weight: 300;
+        font-style: italic; }
+        .team-member-info p::before {
+          content: '"'; }
+        .team-member-info p::after {
+          content: '"'; }
+    .team-member:nth-child(1) {
+      text-align: right;
+      padding: 24px 32px 24px 0; }
+    .team-member:nth-child(2) {
+      justify-content: flex-start;
+      text-align: left;
+      padding: 24px 0 24px 32px; }

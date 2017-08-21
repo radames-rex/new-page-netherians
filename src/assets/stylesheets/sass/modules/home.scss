@@ -98,7 +98,7 @@
     background-size: contain;
 
     h2 {
-    	 color: #8dc863;
+    	color: #8dc863;
 	    margin: 38% 5% 0 0;
 	    text-align: right;    	
     	font-family: 'Beyond';
@@ -128,5 +128,78 @@
 	    }
 			
     }
+	}
+}
+
+.team {
+	background-color: #000;
+	color: #fff;
+
+	&-member {
+		flex: 1;
+
+		figure {
+	    width: 120px;
+	    height: 120px;
+	    border-radius: 50%;
+	    border: 3px solid #000;
+	    box-shadow: 0 0 26px #24CAFB;
+	    overflow: hidden;
+
+			img {
+				width: auto;
+		    height: 100%;
+		    margin: 0 auto;
+		    transform: translateX(-50%);
+		    margin-left: 50%;
+			}
+		}
+
+		&-info {
+			margin: 0 42px;
+
+			h4 {
+				font-family: 'Pixel';
+				font-size: 24px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			span {
+				margin: 6px 0 0 0;
+				font-family: 'Muli';
+				font-size: 18px;
+				font-weight: normal;
+				font-style: italic;
+			}
+
+			p {
+				width: 25vw;
+				margin: 8px 0 0 0;
+				font-family: 'Muli';
+				font-size: 16px;
+				font-weight: 300;
+				font-style: italic;
+
+				&::before {
+					content: '"';
+				}
+
+				&::after {
+					content: '"';
+				}
+			}
+		}
+
+		&:nth-child(1) {
+			text-align: right;
+			padding: 24px 32px 24px 0;			
+		}
+
+		&:nth-child(2) {
+    	justify-content: flex-start;
+    	text-align: left;
+    	padding: 24px 0 24px 32px;
+		}
 	}
 }
