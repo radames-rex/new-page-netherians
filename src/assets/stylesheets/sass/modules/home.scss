@@ -254,10 +254,57 @@
 
 	&-describe {
     min-height: 100vh;
+    text-align: center;
+
+		h2 {
+			font-family: 'Muli';
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
+		h3 {
+			font-family: 'Beyond';
+			font-size: 42px;				
+		}	    
+
+		&-paper {
+			margin: 24px 5%;
+    	padding: 7vh 10vw;
+			background: url('../images/paper.png') no-repeat;
+			background-size: 100% 100%;
+		}
+
+		p {
+	    margin: 24px 0 12px 18px;
+	    font-family: 'Stonehenge';
+	    text-align: left;
+	    font-weight: normal;
+	    font-size: 20px;
+	    color: #af2400;
+		}
 	}
 
 	&-art {
     min-height: 100vh;
+    text-align: center;
+
+		h2 {
+			font-family: 'Muli';
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+
+		h3 {
+			font-family: 'Beyond';
+			font-size: 42px;				
+		}	
+
+		div {
+			margin: 42px;
+			font-family: 'Muli';
+			font-size: 24px;
+			text-transform: uppercase;	
+		}    
 	}
 }
 

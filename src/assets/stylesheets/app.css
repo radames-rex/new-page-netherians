@@ -62,6 +62,10 @@ table {
   src: url("../fonts/Pixel.ttf");
   font-weight: 400; }
 
+@font-face {
+  font-family: 'Stonehenge';
+  src: url("../fonts/Stonehenge.ttf"); }
+
 body {
   background: url("../images/general-bg.jpg") no-repeat;
   background-attachment: fixed;
@@ -386,9 +390,42 @@ main {
         .game-mecanics-list-schools span {
           font-style: italic; }
   .game-describe {
-    min-height: 100vh; }
+    min-height: 100vh;
+    text-align: center; }
+    .game-describe h2 {
+      font-family: 'Muli';
+      font-size: 24px;
+      text-transform: uppercase; }
+    .game-describe h3 {
+      font-family: 'Beyond';
+      font-size: 42px; }
+    .game-describe-paper {
+      margin: 24px 5%;
+      padding: 7vh 10vw;
+      background: url("../images/paper.png") no-repeat;
+      background-size: 100% 100%; }
+    .game-describe p {
+      margin: 24px 0 12px 18px;
+      font-family: 'Stonehenge';
+      text-align: left;
+      font-weight: normal;
+      font-size: 20px;
+      color: #af2400; }
   .game-art {
-    min-height: 100vh; }
+    min-height: 100vh;
+    text-align: center; }
+    .game-art h2 {
+      font-family: 'Muli';
+      font-size: 24px;
+      text-transform: uppercase; }
+    .game-art h3 {
+      font-family: 'Beyond';
+      font-size: 42px; }
+    .game-art div {
+      margin: 42px;
+      font-family: 'Muli';
+      font-size: 24px;
+      text-transform: uppercase; }
 
 .team {
   background-color: #000;
