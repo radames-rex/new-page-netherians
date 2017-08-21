@@ -276,7 +276,7 @@ main {
 
 .game {
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.84);
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff; }
   .game-call {
     height: 100vh;
@@ -311,6 +311,84 @@ main {
       .game-call button:active {
         background-color: #fff;
         color: #739d58; }
+  .game-devices {
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center; }
+    .game-devices-title {
+      margin: 0 0 0 5%;
+      font-weight: bold; }
+      .game-devices-title h2 {
+        font-family: 'Muli';
+        font-size: 24px;
+        text-transform: uppercase; }
+      .game-devices-title h3 {
+        font-family: 'Beyond';
+        font-size: 42px; }
+    .game-devices-item {
+      border: 1px solid #fff; }
+    .game-devices-col {
+      width: 200px;
+      padding: 16px 28px;
+      font-family: 'Muli';
+      font-size: 16px; }
+      .game-devices-col:nth-child(1) {
+        flex: 1;
+        font-weight: bold; }
+      .game-devices-col:nth-child(2) {
+        flex: 1.5;
+        font-weight: 300; }
+  .game-mecanics {
+    min-height: 100vh;
+    align-items: center; }
+    .game-mecanics-concept {
+      flex: 1;
+      margin: 0 0 0 5%; }
+      .game-mecanics-concept h4 {
+        font-family: 'Pixel';
+        text-transform: uppercase;
+        margin: 12px 0 6px;
+        font-size: 20px; }
+      .game-mecanics-concept p {
+        font-family: 'Muli';
+        text-align: left;
+        font-weight: 300;
+        font-size: 17px; }
+    .game-mecanics-title {
+      flex: 1;
+      text-align: center; }
+      .game-mecanics-title h2 {
+        font-family: 'Muli';
+        font-size: 24px;
+        text-transform: uppercase; }
+      .game-mecanics-title h3 {
+        font-family: 'Beyond';
+        font-size: 42px; }
+    .game-mecanics-list {
+      flex: 1; }
+      .game-mecanics-list h4 {
+        font-family: 'Pixel';
+        text-transform: uppercase;
+        margin: 12px 0 6px;
+        font-size: 20px; }
+      .game-mecanics-list-class {
+        font-family: 'Muli'; }
+        .game-mecanics-list-class-title {
+          padding: 12px;
+          font-weight: bold;
+          font-size: 18px;
+          border: 1px solid;
+          border-width: 1px 0 1px 1px; }
+      .game-mecanics-list-schools {
+        padding: 6px 6px 6px 12px;
+        font-weight: 300;
+        font-size: 16px; }
+        .game-mecanics-list-schools span {
+          font-style: italic; }
+  .game-describe {
+    min-height: 100vh; }
+  .game-art {
+    min-height: 100vh; }
 
 .team {
   background-color: #000;

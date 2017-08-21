@@ -86,7 +86,7 @@
 
 .game {
 	padding: 0;
-	background-color: rgba(0, 0, 0, 0.84);
+	background-color: rgba(0, 0, 0, 0.75);
 	color: #fff;
 
 	&-call {
@@ -129,8 +129,135 @@
 		    background-color: #fff;
 		    color: rgb(115, 157, 88);    	
 	    }
-			
     }
+	}
+
+	&-devices {
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+			margin: 0 0 0 5%;
+			font-weight: bold;
+
+			h2 {
+				font-family: 'Muli';
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+
+			h3 {
+				font-family: 'Beyond';
+				font-size: 42px;				
+			}
+    }
+
+    aside {
+
+    }
+
+		&-item {
+			border: 1px solid #fff;
+		}
+
+    &-col {
+    	width: 200px;
+    	padding: 16px 28px;
+    	font-family: 'Muli';
+    	font-size: 16px;
+
+    	&:nth-child(1) {
+				flex: 1;
+				font-weight: bold;
+    	}
+
+    	&:nth-child(2) {
+				flex: 1.5;
+				font-weight: 300;
+    	}
+    }
+	}
+
+	&-mecanics {
+    min-height: 100vh;
+    align-items: center;
+
+    &-concept {
+			flex: 1;
+			margin: 0 0 0 5%;
+
+			h4 {
+				font-family: 'Pixel';
+				text-transform: uppercase;
+				margin: 12px 0 6px;
+				font-size: 20px;
+			}
+
+			p {
+				font-family: 'Muli';
+				text-align: left;
+				font-weight: 300;
+				font-size: 17px;
+			}
+    }
+
+    &-title {
+			flex: 1;
+			text-align: center;
+
+			h2 {
+				font-family: 'Muli';
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+
+			h3 {
+				font-family: 'Beyond';
+				font-size: 42px;				
+			}			
+    }
+
+    &-list {
+    	flex: 1;	
+
+    	h4 {
+				font-family: 'Pixel';
+				text-transform: uppercase;
+				margin: 12px 0 6px;
+				font-size: 20px;
+    	}	
+
+    	&-class {
+				font-family: 'Muli';
+
+    		&-title {
+    			padding: 12px;
+					font-weight: bold;
+					font-size: 18px;
+					border: 1px solid;
+    			border-width: 1px 0 1px 1px;
+    		}
+    	}
+
+  		&-schools {
+  			padding: 6px 6px 6px 12px;
+				font-weight: 300;
+				font-size: 16px;
+
+				span {
+					font-style: italic;
+				}
+  		}
+    }
+	}
+
+	&-describe {
+    min-height: 100vh;
+	}
+
+	&-art {
+    min-height: 100vh;
 	}
 }
 
