@@ -28,7 +28,6 @@
 
 .notices,
 	.team {
-	background-color: #fff;
 	font-family: 'Muli';
 	padding: 24px 5%;
 
@@ -50,6 +49,8 @@
 }
 
 .notices {
+	background-color: #fff;
+
 	&-articles {
 		justify-content: space-between;
 
@@ -85,6 +86,8 @@
 
 .game {
 	padding: 0;
+	background-color: rgba(0, 0, 0, 0.84);
+	color: #fff;
 
 	&-call {
     height: 100vh;
