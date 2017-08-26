@@ -42,3 +42,26 @@
     align-items: center;
 	}
 }
+
+
+@media only screen and (max-width: 450px) {
+	.row-mobile {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.row-reverse-mobile {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.col-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.col-reverse-mobile {
+		display: flex;
+		flex-direction: column-reverse;
+	}	
+}

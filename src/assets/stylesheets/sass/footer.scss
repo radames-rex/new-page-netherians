@@ -72,3 +72,10 @@
 		}
 	}
 }
+
+
+@media only screen and (max-width: 450px) {
+	footer {
+		display: none;
+	}
+}

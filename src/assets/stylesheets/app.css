@@ -114,6 +114,20 @@ a {
     display: flex;
     align-items: center; }
 
+@media only screen and (max-width: 450px) {
+  .row-mobile {
+    display: flex;
+    flex-direction: row; }
+  .row-reverse-mobile {
+    display: flex;
+    flex-direction: row-reverse; }
+  .col-mobile {
+    display: flex;
+    flex-direction: column; }
+  .col-reverse-mobile {
+    display: flex;
+    flex-direction: column-reverse; } }
+
 .header {
   width: 100%;
   position: fixed;
@@ -154,6 +168,10 @@ a {
         .header-nav ul a:active {
           color: #fff;
           background-color: #000; }
+
+@media only screen and (max-width: 450px) {
+  .header {
+    display: none; } }
 
 .footer {
   background-color: rgba(0, 0, 0, 0.84); }
@@ -207,6 +225,10 @@ a {
     .links-social li a {
       text-decoration: none;
       color: inherit; }
+
+@media only screen and (max-width: 450px) {
+  footer {
+    display: none; } }
 
 .facebook-color {
   color: #3b5998 !important; }
@@ -475,9 +497,65 @@ a {
         .team-member-info p::after {
           content: '"'; }
     .team-member:nth-child(1) {
-      text-align: right;
-      padding: 24px 32px 24px 0; }
+      text-align: center;
+      padding: 0; }
     .team-member:nth-child(2) {
-      justify-content: flex-start;
-      text-align: left;
-      padding: 24px 0 24px 32px; }
+      text-align: center;
+      padding: 0; }
+
+@media only screen and (max-width: 450px) {
+  .home-banner h1 img {
+    width: 80%; }
+  .home-banner h3 {
+    font-size: 16px; }
+  .notices {
+    background-color: #fff;
+    height: auto; }
+    .notices-articles {
+      justify-content: space-between; }
+      .notices-articles article {
+        width: 100%; }
+        .notices-articles article p {
+          margin: 0 0 24px 0; }
+  .game-call h2 {
+    margin: 75vh 5% 0 0; }
+  .game-devices-title {
+    margin: 10vh 0 0 0;
+    text-align: center; }
+    .game-devices-title h2 {
+      font-size: 16px; }
+    .game-devices-title h3 {
+      font-size: 36px; }
+  .game-devices aside {
+    width: 90vw;
+    margin: 24px 0; }
+  .game-mecanics-concept {
+    order: 2;
+    flex: 1;
+    margin: 24px 5% 0 5%; }
+  .game-mecanics-title {
+    order: 1;
+    flex: 1;
+    margin: 10vh 0 24px 0; }
+  .game-mecanics-list {
+    order: 3;
+    flex: 1;
+    margin: 24px 0 24px 5%; }
+  .game-describe-paper {
+    background: url("../images/paper.png") no-repeat;
+    background-size: 100% 100%; }
+  .game-art h2 {
+    margin: 10vh 0 0 0;
+    text-align: center; }
+  .team-member figure {
+    margin: 0 auto 24px; }
+  .team-member-info p {
+    width: 100%;
+    margin: 8px 0 24px;
+    text-align: center; }
+  .team-member:nth-child(1) {
+    text-align: center;
+    padding: 0; }
+  .team-member:nth-child(2) {
+    text-align: center;
+    padding: 0; } }

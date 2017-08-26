@@ -370,14 +370,142 @@
 		}
 
 		&:nth-child(1) {
-			text-align: right;
-			padding: 24px 32px 24px 0;			
+			text-align: center;
+			padding: 0;			
 		}
 
 		&:nth-child(2) {
-    	justify-content: flex-start;
-    	text-align: left;
-    	padding: 24px 0 24px 32px;
+    	text-align: center;
+    	padding: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.home {
+		&-banner {
+			h1 {
+		    img {
+		    	width: 80%;
+		    }
+			}
+
+			h3 {
+		    font-size: 16px;
+			}
+		}
+	}
+
+	.notices {
+		background-color: #fff;
+		height: auto;
+
+		&-articles {
+			justify-content: space-between;
+
+			article {
+				width: 100%;
+
+				p {
+					margin: 0 0 24px 0;
+				}
+			}
+		}
+	}
+
+
+	.game {
+
+		&-call {
+	    h2 {
+		    margin: 75vh 5% 0 0;  	
+	    }
+		}
+
+		&-devices {
+
+	    &-title {
+	    	margin: 10vh 0 0 0;
+				text-align: center;
+
+				h2 {
+					font-size: 16px;
+				}
+
+				h3 {
+					font-size: 36px;				
+				}
+	    }
+
+	    aside {
+	    	width: 90vw;
+	    	margin: 24px 0;
+	    }
+		}
+
+		&-mecanics {
+
+	    &-concept {
+	    	order: 2;
+				flex: 1;
+				margin: 24px 5% 0 5%;
+	    }
+
+	    &-title {
+	    	order: 1;
+				flex: 1;
+				margin: 10vh 0 24px 0;		
+	    }
+
+	    &-list {
+	    	order: 3;
+	    	flex: 1;
+	    	margin: 24px 0 24px 5%;	
+	    }
+		}
+
+		&-describe {   
+
+			&-paper {
+				background: url('../images/paper.png') no-repeat;
+				background-size: 100% 100%;
+			}
+		}
+
+		&-art {
+	    h2 {
+				margin: 10vh 0 0 0;
+				text-align: center;
+	    }   
+		}
+	}
+
+	.team {
+
+		&-member {
+
+			figure {
+				margin: 0 auto 24px;
+			}
+
+			&-info {
+
+				p {
+			    width: 100%;
+			    margin: 8px 0 24px;
+			    text-align: center;
+				}
+			}
+
+			&:nth-child(1) {
+				text-align: center;
+				padding: 0;			
+			}
+
+			&:nth-child(2) {
+	    	text-align: center;
+	    	padding: 0;
+			}
 		}
 	}
 }

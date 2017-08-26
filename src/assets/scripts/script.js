@@ -1,6 +1,6 @@
 // Reduz Header após scroll
 $( window ).scroll(function() {
-	var top = $('.header').offset().top <= 120;
+	var top = $('.header').offset().top <= 1;
   if(top){
   	$('.header-image').removeClass('header-image-mini'); 	
   }else {
