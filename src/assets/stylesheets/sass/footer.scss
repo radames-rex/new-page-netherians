@@ -1,5 +1,5 @@
 .footer {
-   background-color: rgba(0, 0, 0, 0.84);
+  background-color: rgba(0, 0, 0, 0.84);
 
 	&-main {
 		padding: 12px 0;
@@ -76,6 +76,15 @@
 
 @media only screen and (max-width: 450px) {
 	footer {
-		display: none;
+		.links {
+			&-page {
+		    padding: 0 24px;
+			}
+
+			&-helpers {
+		    text-align: center;
+		    padding: 0 24px;
+			}
+		}
 	}
 }

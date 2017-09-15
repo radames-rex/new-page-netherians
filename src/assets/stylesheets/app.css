@@ -265,8 +265,11 @@ a {
       color: inherit; }
 
 @media only screen and (max-width: 450px) {
-  footer {
-    display: none; } }
+  footer .links-page {
+    padding: 0 24px; }
+  footer .links-helpers {
+    text-align: center;
+    padding: 0 24px; } }
 
 .facebook-color {
   color: #3b5998 !important; }
