@@ -1,3 +1,12 @@
+// Open menu mobile
+$( '.header-bars' ).click(function(){
+  if($( '.header-nav ul' ).hasClass('closed')) {
+    $( '.header-nav ul' ).removeClass('closed');
+  } else {
+    $( '.header-nav ul' ).addClass('closed');
+  }
+});
+
 // Reduz Header após scroll
 $( window ).scroll(function() {
 	var top = $('.header').offset().top <= 1;
